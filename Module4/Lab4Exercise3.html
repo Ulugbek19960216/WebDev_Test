@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample HTML Code - NewsLetter Form</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        background-color: rgb(132, 73, 250);
+        min-height: 100vh;
+        color: white;
+        gap: 20px;
+        font-family: "Poppins", "san-serif";
+    }
+
+    .intro .title {
+        font-weight: 800;
+    }
+    .sign-up {
+        width: 50%;
+        text-align: center;
+    }
+
+    .sign-up-para{
+        background-color: rgb(134, 37, 225);
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .sign-up-form {
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: grey;
+
+    }
+    .form-input {
+      padding: 15px;
+      align-self: center;
+      width: 100%;
+    }
+    input{
+      padding: 10px;
+      border: 2px solid lightgray;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    .submit-btn {
+      margin-bottom: 15px;
+      background-color: rgb(21, 165, 21);
+      color: white;
+      border: none;
+    }
+    
+    .form-input span{
+      color: red;
+    }
+
+
+    
+  </style>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <main>
+    <!-- intro section -->
+    <section class="intro">
+      <h1 class="title">Hot Deals for learning Programming</h1>
+      <p>Get up to 30% off on all our products and services. Hurry up, the offer ends in 48 hours.</p>
+    </section>
+
+    <!-- sign-up section -->
+    <section class="sign-up">
+      <p class="sign-up-para">Sign up for our newsletter and get 30% off your first course</p>
+      <!-- the form itself -->
+      <form class="sign-up-form">
+        <div class="form-input">
+          <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+        </div>
+
+        <div class="form-input">
+          <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+        </div>
+
+        <div class="form-input">
+          <input type="email" name="email" id="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="form-input">
+          <input type="Password" name="Password" id="Password" placeholder="Password" required>
+        </div>
+          <div class="form-input">
+          <input class="submit-btn" type="submit" value="Claim your offer">
+          <p class="form-term">By clicking the button, you are agreeing to our <span>Terms and Services</span> </p>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
