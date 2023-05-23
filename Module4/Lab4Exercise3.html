@@ -8,6 +8,10 @@
   <title>Sample HTML Code - NewsLetter Form</title>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+    * {
+      box-sizing: border-box;
+    }
+
     main{
         display: flex;
         justify-content: center;
@@ -43,7 +47,6 @@
         justify-content: center;
         align-items: center;
         color: grey;
-
     }
     .form-input {
       padding: 15px;
@@ -69,7 +72,19 @@
     }
 
 
-    
+    @media screen and (max-width:500px) {
+      main{
+        display: flex;
+        background-color: rgb(185, 221, 56);
+        flex-direction: column;
+        
+    }
+    .sign-up{
+      width: 100%;
+    }
+
+      
+    }
   </style>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
