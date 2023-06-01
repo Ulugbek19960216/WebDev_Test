@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 50%;
+        }
+        .parag{
+            padding: 20px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .hello-btn {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="con">
+        <p class="parag">Say Hello to </p>
+        <input  class ="user" type="text" placeholder="Please enter your name">
+        <button class="hello-btn" 
+        onclick="sayHello()">
+            Say Hello
+        </button>
+    <h1 id="title"></h1>
+    </div>
+</body>
+
+<script src="test.js"></script>
+</html>

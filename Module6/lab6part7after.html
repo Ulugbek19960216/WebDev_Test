@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="row m-4">
+        <div class="col-6 ">
+            <label for="first-number">1st Number : </label>
+            <input id="first-num" type="text" name="firstInt">
+        </div>
+        <div class="col-6">
+            <label for="second-number">2nd Number : </label>
+            <input id="second-num" type="text" name="secondInt">
+        </div>
+    </div>
+    <div class="row m-4 ">
+        <div class="col-3">
+            <button id="mul  " class="bg-success text-white p-2 w-100 rounded-4 " onclick="calc('mul')">Multiplication</button>
+        </div>
+        <div class="col-3">
+            <button id="div" class="bg-success text-white p-2  w-100 rounded-4 " onclick="calc('div')">Division</button>
+        </div>
+        <div class="col-3">
+            <button id="add" class="bg-success text-white p-2  w-100 rounded-4 " onclick="calc('add')">Addition</button>
+        </div>
+        <div class="col-3">
+            <button id="sub" class="bg-success text-white w-100 p-2 rounded-4 " onclick="calc('sub')" >Substraction</button>
+        </div>
+    </div>
+    
+    <div class="row text-center p-5 text-primary">
+        <div class="col-12">
+            <p id="result">The result is : </p>
+        </div>
+    </div>
+
+    <script src="lab6part7after.js"></script>
+</body>
+</html>
